@@ -31,6 +31,7 @@ group :postgres do
 end
 
 group :development do
-  gem 'capistrano', '~> 2.15'
+  gem 'capistrano' #, '~> 2.15'
+  gem 'capistrano-rails'
   gem 'foreman'
 end
