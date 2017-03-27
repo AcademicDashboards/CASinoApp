@@ -19,13 +19,13 @@ gem 'http_accept_language', '~> 2.0'
 
 gem 'whenever', :require => false
 
-group :sqlite do
-  gem 'sqlite3'
-end
-
-group :mysql do
-  gem 'mysql2'
-end
+# group :sqlite do
+#   gem 'sqlite3'
+# end
+#
+# group :mysql do
+#   gem 'mysql2'
+# end
 
 group :postgres do
   gem 'pg'
