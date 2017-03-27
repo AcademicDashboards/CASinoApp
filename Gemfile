@@ -38,6 +38,7 @@ group :development do
 end
 
 gem 'figaro'
+gem 'pry-rails'
 
 # Calm the logs down...
 gem 'lograge'
