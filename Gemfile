@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '~> 4.2.0'
-gem 'puma'
+gem 'unicorn'
 
 group :assets do
   gem 'sass-rails',   '~> 4.0.3'
@@ -31,7 +31,12 @@ group :postgres do
 end
 
 group :development do
-  gem 'capistrano' #, '~> 2.15'
+  gem 'capistrano' , '~> 2.15'
   gem 'capistrano-rails'
   gem 'foreman'
 end
+
+gem 'figaro'
+
+# Calm the logs down...
+gem 'lograge'

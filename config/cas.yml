@@ -1,0 +1,30 @@
+default: &default
+  authenticators:
+    my_company_sql_database:
+      authenticator: "ActiveRecord"
+      options:
+        connection:
+          adapter: "postgresql"
+          host: <%= ENV['auth_database_host'] %>
+          port: <%= ENV['auth_database_port'] %>
+          username: <%= ENV['auth_database_username'] %>
+          password: <%= ENV['auth_database_password'] %>
+          database: <%= ENV['auth_database'] %>
+        table: "users"
+        username_column: "username"
+        password_column: "encrypted_password"
+        extra_attributes:
+          email: "email"
+          user_roles: "serial_roles"
+
+development:
+  <<: *default
+  frontend:
+    sso_name: 'CASino'
+    footer_text: 'Powered by <a href="http://rbcas.com/">CASino</a>'
+
+production:
+  <<: *default
+  frontend:
+    sso_name: 'CASino'
+    footer_text: 'Powered by <a href="http://rbcas.com/">CASino</a>'

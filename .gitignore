@@ -14,8 +14,6 @@
 /log/*.log
 /tmp
 
-/config/database.yml
-/config/cas.yml
 
 /vendor/bundle
 /public/assets
@@ -24,3 +22,7 @@
 /config/deploy.rb
 /config/deploy/cas.yml
 /config/deploy/database.yml
+
+# Ignore application configuration
+/config/application.yml
+.env

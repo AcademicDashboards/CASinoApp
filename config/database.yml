@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  host: <%= ENV['cas_database_host'] %>
+  encoding: unicode
+  database: <%= ENV['cas_database'] %>
+  pool: 5
+  username: <%= ENV['cas_database_username'] %>
+  password: <%= ENV['cas_database_pasword'] %>
+
+
+development:
+  <<: *default
+
+production:
+  <<: *default
