@@ -12,7 +12,7 @@ CASinoApp::Application.configure do
   config.serve_static_files = false
 
   # Rack will serve static assets
-  config.middleware.use Rack::Static, urls: ["/assets"], root: 'public'
+  # config.middleware.use Rack::Static, urls: ["/assets"], root: 'public'
 
   # Compress JavaScripts and CSS
   config.assets.compress = true
@@ -31,7 +31,7 @@ CASinoApp::Application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  # config.force_ssl = true
+  config.force_ssl = true
 
   # See everything in the log (default is :info)
   # config.log_level = :debug
