@@ -11,7 +11,7 @@ default: &default
           password: <%= ENV['auth_database_password'] %>
           database: <%= ENV['auth_database'] %>
         table: "users"
-        username_column: "username"
+        username_column: "email"
         password_column: "encrypted_password"
         extra_attributes:
           email: "email"
