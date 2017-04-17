@@ -16,7 +16,9 @@ default: &default
         extra_attributes:
           email: "email"
           user_roles: "serial_roles"
-
+  two_factor_authenticator:
+    enabled: false
+    
 development:
   <<: *default
   frontend:
