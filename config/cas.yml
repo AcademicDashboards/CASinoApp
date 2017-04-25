@@ -18,15 +18,15 @@ default: &default
           user_roles: "serial_roles"
   two_factor_authenticator:
     enabled: false
-    
+
 development:
   <<: *default
   frontend:
-    sso_name: 'CASino'
+    sso_name: 'Damour CAS'
     footer_text: 'Powered by <a href="http://rbcas.com/">CASino</a>'
 
 production:
   <<: *default
   frontend:
-    sso_name: 'CASino'
+    sso_name: 'Damour CAS'
     footer_text: 'Powered by <a href="http://rbcas.com/">CASino</a>'

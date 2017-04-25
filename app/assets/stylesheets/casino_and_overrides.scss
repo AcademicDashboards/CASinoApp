@@ -3,10 +3,14 @@
 
 // $buttonColor: #0074ad;
 // $buttonSecondaryColor: #c2c2c2;
-$logo: "damour_logo.png";
+// $logo: "damour_logo.png";
 // $logoRetina: "logo@2x.png";
 // $logoWidth: 146px;
 // $logoHeight: 34px;
 
 
 @import 'casino';
+
+.logo {
+  background-image: image-url('damour_logo.png') !important;
+}
