@@ -22,11 +22,11 @@ default: &default
 development:
   <<: *default
   frontend:
-    sso_name: 'Damour CAS'
+    sso_name: 'RPSP Degree Roadmap Logon'
     footer_text: 'Powered by <a href="http://rbcas.com/">CASino</a>'
 
 production:
   <<: *default
   frontend:
-    sso_name: 'Damour CAS'
+    sso_name: 'RPSP Degree Roadmap Logon'
     footer_text: 'Powered by <a href="http://rbcas.com/">CASino</a>'
