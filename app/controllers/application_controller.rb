@@ -5,6 +5,10 @@ class ApplicationController < ActionController::Base
 
   before_action :set_locale
 
+  def health
+    render status: :ok, json: {status: 'ok'}
+  end
+  
   private
   def set_locale
     I18n.locale = extract_locale_from_accept_language_header || I18n.default_locale
